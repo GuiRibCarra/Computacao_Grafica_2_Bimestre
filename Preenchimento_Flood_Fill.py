@@ -11,7 +11,7 @@ def bounding_box(pontos):
 
 
 # Função recursiva para preencher o polígono (Flood-Fill)
-def flood_fill(x, y, canvas, target_cwolor, fill_color):
+def flood_fill(x, y, canvas, target_color, fill_color):
     current_color = canvas.gettags(canvas.find_closest(x, y))
     if current_color == target_color:
         # Altera a cor do pixel
